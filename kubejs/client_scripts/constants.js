@@ -256,8 +256,7 @@ const itemsToHide = [
     'supplementaries:sack',
     'supplementaries:blackboard',
 
-    /^tconstruct:copper_(?:ore|block|nugget)$/,
-    /^tconstruct:cobalt_(?:ore|block|nugget)$/,
+    /^tconstruct:(?:copper|cobalt)_(?:ingot|ore|block|nugget)$/,
 
     /^tconstruct:(?:pickaxe|sledge_hammer|vein_hammer|mattock|excavator|hand_axe|broad_axe|kama|scythe|dagger|sword|cleaver)$/,
 
