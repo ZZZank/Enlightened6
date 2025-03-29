@@ -27,7 +27,7 @@ const EnigPackMode = (() => {
         );
     }
 
-    console.log(`Current packmode is: ${global.packmode}`);
+    console.log(`Current packmode is: ${config.packmode}`);
 
     return {
         validModes: validPackMode,
