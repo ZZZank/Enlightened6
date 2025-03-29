@@ -73,7 +73,6 @@ old.json
 config/cherishedworlds/favorites.dat
 !packmenu/*.zip
 TrashSlotSaveState.json
-mode.json
 emojiful/cache/*
 !config/defaultoptions/options.txt
 .vote2020_marker
