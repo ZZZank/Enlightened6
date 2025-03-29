@@ -1,4 +1,4 @@
-// priority: 1005
+// priority: 10000
 
 /**
  * @param {string} str : e.g. `an example sTRing`

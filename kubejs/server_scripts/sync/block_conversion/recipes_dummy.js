@@ -2,13 +2,13 @@
 
 /**
  * @typedef {{
- *  target: Special.Block;
+ *  target: $ItemStackJS_;
  *  output: $ItemStackJS_;
  *  holding: $ItemStackJS_;
  * }} blockConvDummyRecipe
- * @type {blockConvDummyRecipe[]}
+ * @type {() => blockConvDummyRecipe[]}
  */
-const blockConvDummyRecipes = [
+const blockConvDummyRecipes = () => [
     {
         target: 'minecraft:crafting_table',
         holding: Item.of('tetra:modular_double', {
@@ -48,7 +48,7 @@ const blockConvDummyRecipes = [
         output: 'ars_nouveau:carbuncle_se'
     },
     {
-        target: 'minecraft:ghast_spawn_egg',
+        target: Item.of('minecraft:ghast_spawn_egg').withName('Towards its eyes'),
         // holding: Item.of('botania:ender_air_bottle').withName('toward its eyes'),
         holding: 'botania:ender_air_bottle',
         // see ghast_ender_air_crying loottable

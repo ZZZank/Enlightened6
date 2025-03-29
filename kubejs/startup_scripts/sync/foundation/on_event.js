@@ -1,4 +1,4 @@
-// priority: 1009
+// priority: 10000
 
 /**
  * @type {typeof onEvent}

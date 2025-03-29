@@ -1,4 +1,4 @@
-// priority: 10000
+// priority: 1000
 
 const DEBUG = false;
 const IS_EXPERT_MODE = global['isExpertMode'];
