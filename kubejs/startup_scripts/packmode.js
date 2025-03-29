@@ -1,36 +1,50 @@
 // priority: 1010
 
 const EnigPackMode = (() => {
-    const validPackMode = ['normal', 'expert'];
+    const validPackModes = ['normal', 'expert'];
     const defaultConfig = {
         mode: 'normal',
-        message: `Valid modes are [${validPackMode}].`
+        message: `Valid modes are [${validPackModes}].`
     };
-    const configName = 'mode.json';
+    const configPath = 'kubejs/packmode.json';
+    const oldConfigPaths = ['mode.json'];
 
     /**
      * @type {typeof defaultConfig}
      */
     // @ts-ignore
-    let config = JsonIO.read(configName);
+    let config = JsonIO.read(configPath);
+
     if (!config || !config.mode) {
-        JsonIO.write(configName, defaultConfig);
-        console.log(`Created new ${configName}`);
+        forEachBreakable(oldConfigPaths, (path) => {
+            /** @type {typeof defaultConfig} */
+            // @ts-ignore
+            const cfg = JsonIO.read(path);
+            if (cfg && cfg.mode) {
+                config = cfg;
+                return false;
+            }
+        })
+    }
+
+    if (!config || !config.mode) {
+        JsonIO.write(configPath, defaultConfig);
+        console.log(`Created new ${configPath}`);
         config = defaultConfig;
     }
 
-    if (validPackMode.indexOf(config.mode) == -1) {
-        JsonIO.write(configName, defaultConfig);
+    if (validPackModes.indexOf(config.mode) == -1) {
+        JsonIO.write(configPath, defaultConfig);
         config.mode = defaultConfig.mode;
         console.log(
-            `Overwrote ${configName}, because the mode ${config.mode} was found. Valid modes are [${validPackMode}].`
+            `Overwrote ${configPath}, because the mode ${config.mode} was found. Valid modes are [${validPackModes}].`
         );
     }
 
     console.log(`Current packmode is: ${config.packmode}`);
 
     return {
-        validModes: validPackMode,
+        validModes: validPackModes,
         defaultConfig: defaultConfig,
         config: config
     };
