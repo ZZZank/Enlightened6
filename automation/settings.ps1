@@ -29,11 +29,11 @@ $MODPACK_NAME = "enlightened-6"
 $CLIENT_NAME = "Enlightened6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "2.8.0"
+$MODPACK_VERSION = "2.8.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "2.7.0"
+$LAST_MODPACK_VERSION = "2.8.0"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -66,10 +66,10 @@ $CLIENT_RELEASE_TYPE = "release"
 #=====================================================================//
 
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.1.0-fatjar.jar"
+$CHANGELOG_GENERATOR_JAR = "ModListCreator-5.0.0-fatjar.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-4.1.0-fatjar.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-5.0.0-fatjar.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
@@ -86,7 +86,10 @@ $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
 	"local",
 	"packmenu",
 	"patchouli_books",
-	"schematics")
+	"schematics",
+	"mode.json",
+	"rhino.local.properties"
+)
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"betterendforge/client.json",
