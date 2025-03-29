@@ -5,10 +5,8 @@
 -   AE Growth Accelerator custom usage
     -   fluid/item, when placed next to Growth Accelerator, will drain power from it, having a chance to transform
 -   (storage module n) + 1 = (n+1)
--   "psimetal" recipe
 -   Ethylene(mek) earlier
 -   any ways of trimming stonecutting recipe? (4138 addition, 6000+ total currently)
--   "minecraft:dragon_head" and "immersiveengineering:metal_press"
 
 ## warn
 
