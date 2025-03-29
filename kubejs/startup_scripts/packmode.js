@@ -3,7 +3,7 @@
 const EnigPackMode = (() => {
     const validPackModes = ['normal', 'expert'];
     const defaultConfig = {
-        mode: 'normal',
+        mode: 'expert',
         message: `Valid modes are [${validPackModes}].`
     };
     const configName = 'mode.json';
