@@ -1,4 +1,4 @@
 {
-  "mode": "expert",
+  "mode": "normal",
   "message": "Valid modes are [normal,expert]."
 }
