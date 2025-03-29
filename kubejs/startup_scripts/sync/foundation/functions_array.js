@@ -104,14 +104,14 @@ function spreadArraySizeEnsured(arr, size, fillValue) {
 
 /**
  * @template T
- * @param {T[]} array 
- * @param {(value: T, array: T[]) => void | BREAK} action 
+ * @param {T[]} array
+ * @param {(value: T, array: T[]) => void | BREAK} action
  * @see BREAK : return `false` to break the loop
  */
 function forEachBreakable(array, action) {
     for (let element of array) {
         if (action(element, array) === false) {
-            break
+            break;
         }
     }
 }
