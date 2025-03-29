@@ -6,26 +6,26 @@ const EnigPackMode = (() => {
         mode: 'normal',
         message: `Valid modes are [${validPackModes}].`
     };
-    const configPath = 'mode.json';
+    const configName = 'mode.json';
 
     /**
      * @type {typeof defaultConfig}
      */
     // @ts-ignore
-    let config = JsonIO.read(configPath);
+    let config = JsonIO.read(configName);
 
     if (!config || !config.mode) {
-        JsonIO.write(configPath, defaultConfig);
-        console.log(`Created new ${configPath}`);
+        JsonIO.write(configName, defaultConfig);
+        console.log(`Created new ${configName}`);
         config = defaultConfig;
     }
 
     if (validPackModes.indexOf(config.mode) == -1) {
-        JsonIO.write(configPath, defaultConfig);
-        config.mode = defaultConfig.mode;
         console.log(
-            `Overwrote ${configPath}, because the mode ${config.mode} was found. Valid modes are [${validPackModes}].`
+            `Overwriting ${configName}, because found mode ${config.mode} not in Valid modes: [${validPackModes}].`
         );
+        JsonIO.write(configName, defaultConfig);
+        config = defaultConfig;
     }
 
     console.log(`Current packmode is: ${config.packmode}`);
