@@ -1,3 +1,18 @@
+## Enlightened6 & Enlightened6Expert - 2.8.0 -> 2.8.1
+
+🚀 Forge-1.16.5-36.2.42 | [📜 Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.8.1.md) | [📋 Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.8.1.md)
+
+### forge - 36.2.41 -> 36.2.42
+
+### 🐛 Fixed Bugs
+
+-   packmode logging not logging the latest mode
+-   some recipe hints in Block Conversion has empty inputs
+-   Copper and Cobalt ingots from TCon not hidden properly
+-   default packmode not matching release type
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.7.0 -> 2.8.0
 
 🚀 Forge-1.16.5-36.2.41 | [📜 Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.8.0.md) | [📋 Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.8.0.md)
