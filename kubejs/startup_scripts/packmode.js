@@ -6,26 +6,13 @@ const EnigPackMode = (() => {
         mode: 'normal',
         message: `Valid modes are [${validPackModes}].`
     };
-    const configPath = 'kubejs/packmode.json';
-    const oldConfigPaths = ['mode.json'];
+    const configPath = 'mode.json';
 
     /**
      * @type {typeof defaultConfig}
      */
     // @ts-ignore
     let config = JsonIO.read(configPath);
-
-    if (!config || !config.mode) {
-        forEachBreakable(oldConfigPaths, (path) => {
-            /** @type {typeof defaultConfig} */
-            // @ts-ignore
-            const cfg = JsonIO.read(path);
-            if (cfg && cfg.mode) {
-                config = cfg;
-                return false;
-            }
-        })
-    }
 
     if (!config || !config.mode) {
         JsonIO.write(configPath, defaultConfig);
