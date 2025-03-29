@@ -5,5 +5,7 @@
   "Compound Tag Internal Reconstruct Threshold": 5,
   "Cache Number Tag": true,
   "Number Tag Cache starts at (inclusive)": -4096,
-  "Number Tag Cache ends at (exclusive)": 4096
+  "Number Tag Cache ends at (exclusive)": 4096,
+  "Prevent the server from \u0027awarding\u0027 recipe data to player recipe book": false,
+  "Optimize simple model": true
 }

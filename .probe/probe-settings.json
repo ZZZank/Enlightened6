@@ -37,12 +37,12 @@
   },
   "modHash": {
     "$default": -1,
-    "$value": -3584402224989862203,
+    "$value": 2696884435504516647,
     "$comment": "internal config, used for tracking mod update and modlist change"
   },
   "registryHash": {
     "$default": -1,
-    "$value": 4268276445627905243,
+    "$value": 1677135570326975913,
     "$comment": "internal config, used for tracking registry change"
   },
   "isolatedScopes": {
@@ -121,5 +121,10 @@
     "$default": true,
     "$value": true,
     "$comment": "Generate `Internal` namespace to simulate old typing structure before ProbeJS Legacy 4"
+  },
+  "Field As Beaning": {
+    "$default": true,
+    "$value": true,
+    "$comment": "Convert field to getter/setter if possible, this might help beaning generation be more accurate"
   }
 }
