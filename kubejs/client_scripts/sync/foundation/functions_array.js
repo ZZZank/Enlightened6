@@ -97,3 +97,21 @@ function spreadArraySizeEnsured(arr, size, fillValue) {
     const sizeToEnsure = split[0].length;
     return ensureSubArraySize(split, sizeToEnsure, fillValue);
 }
+
+/**
+ * @typedef {false} BREAK
+ */
+
+/**
+ * @template T
+ * @param {T[]} array 
+ * @param {(value: T, array: T[]) => void | BREAK} action 
+ * @see BREAK : return `false` to break the loop
+ */
+function forEachBreakable(array, action) {
+    for (let element of array) {
+        if (action(element, array) === false) {
+            break
+        }
+    }
+}
