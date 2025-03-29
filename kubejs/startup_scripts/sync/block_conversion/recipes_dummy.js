@@ -48,9 +48,8 @@ const blockConvDummyRecipes = () => [
         output: 'ars_nouveau:carbuncle_se'
     },
     {
-        target: Item.of('minecraft:ghast_spawn_egg').withName('Towards its eyes'),
-        // holding: Item.of('botania:ender_air_bottle').withName('toward its eyes'),
-        holding: 'botania:ender_air_bottle',
+        target: 'minecraft:ghast_spawn_egg',
+        holding: Item.of('botania:ender_air_bottle').withName('toward its eyes'),
         // see ghast_ender_air_crying loottable
         output: withChanceInName('minecraft:ghast_tear', 1 / 8)
     }

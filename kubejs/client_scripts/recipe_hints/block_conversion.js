@@ -36,5 +36,5 @@ onEvent('kube_jei.register_recipes', (event) => {
     const builder = event.custom(blockConvID);
 
     blockConvRecipes.forEach((recipe) => builder.add(recipe));
-    blockConvDummyRecipes.forEach((recipe) => builder.add(recipe));
+    blockConvDummyRecipes().forEach((recipe) => builder.add(recipe));
 });
