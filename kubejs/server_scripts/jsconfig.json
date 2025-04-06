@@ -6,12 +6,18 @@
             "ES5",
             "ES2015"
         ],
+        "isolatedModules": true,
         "rootDir": ".",
+        "incremental": true,
         "typeRoots": [
             "../../.probe/server/probe-types"
         ],
         "baseUrl": "../../.probe/server/probe-types",
         "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "composite": true,
+        "moduleResolution": "classic",
+        "allowJs": true,
         "checkJs": true
     },
     "include": [
