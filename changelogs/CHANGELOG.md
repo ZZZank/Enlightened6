@@ -1,3 +1,13 @@
+## Enlightened6 & Enlightened6Expert - 2.8.1 -> 2.8.2
+
+🚀 Forge-1.16.5-36.2.42 | [📜 Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.8.2.md) | [📋 Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.8.2.md)
+
+### 🐛 Fixed Bugs
+
+-   Immersive Engineering Machines Invisible [#19](https://github.com/ZZZank/Enlightened6/issues/19)
+
+---
+
 ## Enlightened6 & Enlightened6Expert - 2.8.0 -> 2.8.1
 
 🚀 Forge-1.16.5-36.2.42 | [📜 Mod Updates](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/changelog_mods_2.8.1.md) | [📋 Modlist](https://github.com/ZZZank/Enigmatica6Enlightened/blob/enlightened_master/changelogs/modlist_2.8.1.md)
