@@ -35,6 +35,7 @@ jobs:
           git config user.name "$(git log -n 1 --pretty=format:%an minecraftinstance.json)"
           git config user.email "$(git log -n 1 --pretty=format:%ae minecraftinstance.json)"
           
+          git pull --ff-only
           git diff --exit-code MODLIST.md || (git add MODLIST.md && git commit -m "Update MODLIST.md")
           git push
         env:
