@@ -2,16 +2,11 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "ES2015",
-        "lib": [
-            "ES5",
-            "ES2015"
-        ],
+        "lib": ["ES5", "ES2015"],
         "isolatedModules": true,
         "rootDir": ".",
         "incremental": true,
-        "typeRoots": [
-            "../../.probe/client/probe-types"
-        ],
+        "typeRoots": ["../../.probe/client/probe-types"],
         "baseUrl": "../../.probe/client/probe-types",
         "skipLibCheck": true,
         "skipDefaultLibCheck": true,
@@ -20,7 +15,5 @@
         "allowJs": true,
         "checkJs": true
     },
-    "include": [
-        "./**/*.js"
-    ]
+    "include": ["./**/*.js"]
 }
